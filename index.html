@@ -173,6 +173,68 @@
     .service-body h3{margin:0 0 13px;color:var(--navy);font-size:26px;line-height:1.15}
     .service-body p{margin:0 0 18px;color:var(--muted);line-height:1.65}
 
+    .faucet-showcase{
+      margin-top:76px;
+      padding:42px;
+      background:var(--soft);
+    }
+    .faucet-showcase-head{
+      display:flex;
+      justify-content:space-between;
+      align-items:flex-end;
+      gap:30px;
+      margin-bottom:28px;
+    }
+    .faucet-showcase-head h3{
+      margin:0;
+      color:var(--navy);
+      font-size:clamp(28px,3vw,40px);
+      line-height:1.08;
+      letter-spacing:-.035em;
+    }
+    .faucet-showcase-head p{
+      max-width:420px;
+      margin:0;
+      color:var(--muted);
+      line-height:1.65;
+    }
+    .faucet-grid{
+      display:grid;
+      grid-template-columns:repeat(4,minmax(0,1fr));
+      gap:14px;
+    }
+    .faucet-card{
+      margin:0;
+      overflow:hidden;
+      background:#fff;
+      border:1px solid var(--line);
+    }
+    .faucet-card img{
+      width:100%;
+      aspect-ratio:1/1;
+      object-fit:cover;
+      transition:transform .35s ease;
+    }
+    .faucet-card:hover img{transform:scale(1.04)}
+    .faucet-card figcaption{
+      padding:12px 14px;
+      color:var(--navy);
+      font-size:13px;
+      font-weight:700;
+    }
+    .faucet-showcase-cta{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:20px;
+      margin-top:24px;
+    }
+    .faucet-showcase-cta p{
+      margin:0;
+      color:var(--muted);
+      font-size:14px;
+    }
+
     /* PROJECTS */
     .projects{padding:100px 0;background:var(--navy);color:#fff}
     .projects .section-title{color:#fff}
@@ -449,6 +511,11 @@
       .feature-strip{margin-top:55px}
       .feature{padding:28px 0}
       .service-card img{aspect-ratio:4/3}
+      .faucet-showcase{margin-top:48px;padding:24px 18px}
+      .faucet-showcase-head{align-items:flex-start;flex-direction:column;gap:14px}
+      .faucet-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+      .faucet-card figcaption{padding:10px;font-size:12px}
+      .faucet-showcase-cta{align-items:flex-start;flex-direction:column}
       .project-feature{min-height:320px;max-height:380px}
       .coverage-panel{
         min-height:320px;
@@ -594,7 +661,7 @@
               Productos desarrollados bajo estándares europeos y con certificación
               <strong>EN 817:2008</strong>.
             </p>
-            <a class="text-link" href="#contacto">Consultar disponibilidad</a>
+            <a class="text-link" href="#griferias">Ver modelos disponibles ↓</a>
           </div>
         </article>
 
@@ -616,6 +683,30 @@
           </div>
         </article>
       </div>
+
+      <section class="faucet-showcase" id="griferias" aria-labelledby="faucet-title">
+        <div class="faucet-showcase-head">
+          <div>
+            <div class="eyebrow">Línea Rikdom</div>
+            <h3 id="faucet-title">Griferías para cada espacio.</h3>
+          </div>
+          <p>Conoce algunos modelos de nuestra línea de griferías. Escríbenos para consultar especificaciones y disponibilidad.</p>
+        </div>
+        <div class="faucet-grid">
+          <figure class="faucet-card"><img src="assets/llave1.jpg" alt="Grifería Rikdom, modelo 1" loading="lazy"><figcaption>Modelo 01</figcaption></figure>
+          <figure class="faucet-card"><img src="assets/llave2.jpg" alt="Grifería Rikdom, modelo 2" loading="lazy"><figcaption>Modelo 02</figcaption></figure>
+          <figure class="faucet-card"><img src="assets/llave3.jpg" alt="Grifería Rikdom, modelo 3" loading="lazy"><figcaption>Modelo 03</figcaption></figure>
+          <figure class="faucet-card"><img src="assets/llave4.jpg" alt="Grifería Rikdom, modelo 4" loading="lazy"><figcaption>Modelo 04</figcaption></figure>
+          <figure class="faucet-card"><img src="assets/llave5.jpg" alt="Grifería Rikdom, modelo 5" loading="lazy"><figcaption>Modelo 05</figcaption></figure>
+          <figure class="faucet-card"><img src="assets/llave6.jpg" alt="Grifería Rikdom, modelo 6" loading="lazy"><figcaption>Modelo 06</figcaption></figure>
+          <figure class="faucet-card"><img src="assets/llave7.jpg" alt="Grifería Rikdom, modelo 7" loading="lazy"><figcaption>Modelo 07</figcaption></figure>
+          <figure class="faucet-card"><img src="assets/llave8.jpg" alt="Grifería Rikdom, modelo 8" loading="lazy"><figcaption>Modelo 08</figcaption></figure>
+        </div>
+        <div class="faucet-showcase-cta">
+          <p>¿Buscas una alternativa para tu proyecto?</p>
+          <a class="text-link" href="#contacto">Consultar griferías →</a>
+        </div>
+      </section>
     </div>
   </section>
 
