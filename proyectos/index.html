@@ -765,7 +765,7 @@
     </div>
 
     <div class="footer-bottom">
-      <span>© 2026 Rikdom Chile SpA. Todos los derechos reservados.</span>
+      <span>© 2026 Rikdom Chile SpA. Todos los derechos reservados.<span class="rikdom-holding-credit">Una empresa de Rikdom Co.</span></span>
       <span>Diseño y Desarrollo por <a class="footer-credit" href="https://lowsignal.cl" target="_blank" rel="noopener noreferrer">lowsignal</a></span>
     </div>
   </div>
@@ -780,5 +780,17 @@
     a.addEventListener('click', () => navLinks.classList.remove('open'));
   });
 </script>
+<style>
+.rikdom-whatsapp-float{position:fixed;right:24px;bottom:24px;right:calc(24px + env(safe-area-inset-right,0px));bottom:calc(24px + env(safe-area-inset-bottom,0px));width:64px;height:64px;border-radius:50%;background:#25D366;color:#fff;display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.18);z-index:999;text-decoration:none;transition:transform .2s,background .2s}
+.rikdom-whatsapp-float svg{width:36px;height:36px;display:block;fill:currentColor}
+.rikdom-whatsapp-float:hover{background:#1ebe5d;color:#fff;transform:translateY(-3px)}
+.rikdom-whatsapp-float:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.rikdom-holding-credit{display:block;margin-top:5px}
+@media(max-width:600px){.rikdom-whatsapp-float{width:56px;height:56px;right:calc(16px + env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px))}.rikdom-whatsapp-float svg{width:32px;height:32px}}
+@media(prefers-reduced-motion:reduce){.rikdom-whatsapp-float{transition:none}}
+</style>
+<a class="rikdom-whatsapp-float" href="https://wa.me/56976480236" target="_blank" rel="noopener noreferrer" aria-label="Contactar a Rikdom Chile por WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="currentColor" d="M12 2a9.77 9.77 0 0 0-8.35 14.86L2.4 21.45l4.7-1.23A9.79 9.79 0 1 0 12 2Zm0 17.78a7.75 7.75 0 0 1-3.95-1.08l-.28-.17-2.79.73.74-2.72-.18-.28A7.77 7.77 0 1 1 12 19.78Zm4.26-5.82c-.23-.12-1.37-.68-1.58-.76-.21-.08-.36-.12-.51.12-.15.23-.59.76-.72.92-.13.15-.26.17-.49.06-.23-.12-.97-.36-1.84-1.14-.68-.61-1.14-1.36-1.27-1.59-.13-.23-.01-.36.1-.47.1-.1.23-.26.34-.39.11-.13.15-.23.23-.38.08-.15.04-.29-.02-.41-.06-.12-.51-1.23-.7-1.68-.18-.44-.37-.38-.51-.39h-.44c-.15 0-.39.06-.59.29-.21.23-.78.76-.78 1.86s.8 2.16.91 2.31c.11.15 1.57 2.39 3.8 3.35.53.23.95.37 1.27.47.53.17 1.01.15 1.39.09.42-.06 1.37-.56 1.56-1.1.19-.54.19-1 .13-1.1-.05-.1-.2-.16-.43-.28Z"/>
+            </svg></a>
 </body>
 </html>
